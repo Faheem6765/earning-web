@@ -13,6 +13,10 @@
     color: white;
 }
 
+.right-section img{
+    margin-top: 115px;
+}
+
 .register-btn{
     width: 180px;
     height: 50px;
@@ -40,11 +44,12 @@
     .right-section>img{
         width: 320px;
         height: 250px;
+        margin-top: 0px;
     }
 
     .left-section>p{
         font-size: 35px;
-        margin-top: 10px;
+        margin-top: 110px;
     }
 
     .register-btn{
