@@ -1,41 +1,37 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
-}
 
-body{
-    height: 100vh;
+.navbar{
+    background-color: rgba(71,11,127,255) !important;
     width: 100%;
 }
 
 .nav-container{
-    position: fixed;
+     position: fixed;
     width: 100%;
     z-index: 999;
     top:0;
-}
-
-.navbar{
-    background-color: rgba(71,11,127,255) !important;
 }
 
 .navbar-brand>img{
  margin-left: 50px;
 }
 
-ul li a{
+ul li .mynav-link{
+    text-decoration: none;
     font-size: 21px !important;
     color: white !important;
 }
 
-ul li a:hover{
+a:hover{
+    text-decoration: none;
+}
+
+ul li .mynav-link:hover{
+    text-decoration: none !important;
     color: rgb(255, 38, 0) !important;
     transition: all .3s;
 }
 
-ul li a {
+ul li .mynav-link {
     margin-left: 20px !important;
 }
 
@@ -52,13 +48,13 @@ ul li a {
     height: 50px !important;
 }
 
-ul li{
+ul .mynav-item{
     display: flex !important;
     justify-content: center !important;
     align-items: center;
 }
 
 .contact-btn{
-    display: none;
+    display: none !important;
 }
 }
