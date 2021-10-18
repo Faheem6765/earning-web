@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/campaign.css">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.min.css"
+        integrity="sha512-wDB6AYiYP4FO5Sxieamqy9wtpAY3qdHMqlhZecIEUu1YjkLw5gQf/4ZDgOzmCBAF5SheMjmugkpUSVoUrGbLkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -28,20 +32,29 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto ml-4">
                     <li class="mynav-item active">
-                        <a class="mynav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="mynav-link" href="#">
+                            <i class="fa fa-home fa-1x mr-1" style="color: #fff;" aria-hidden="true"></i>
+                            Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="mynav-item">
-                        <a class="mynav-link" href="#">About</a>
+                        <a class="mynav-link" href="#">
+                            <i class="fas fa-link fa-1x mr-2" style="color: #fff;" aria-hidden="true"></i>
+                            Shorlinks</a>
                     </li>
 
                     <li class="mynav-item">
-                        <a class="mynav-link" href="#">Sign up</a>
+                        <a class="mynav-link" href="#">
+                            <i class="fas fa-user-plus fa-1x mr-2" style="color: #fff;" aria-hidden="true"></i>
+                            Sign up</a>
                     </li>
                     <li class="mynav-item">
-                        <a class="mynav-link" href="#">Login</a>
+                        <a class="mynav-link" href="#">
+                            <i class="fas fa-sign-in-alt fa-1x mr-2" style="color: #fff;" aria-hidden="true"></i>
+                            Login</a>
                     </li>
+
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <button class="contact-btn btn btn-lg btn-primary my-2 my-sm-0" type="submit">Contact</button>
@@ -53,9 +66,16 @@
     <!------End of Navbar-->
 
     <div class="campaign-container">
-        <div class="campaign-heading">
-            <p>Campaigns</p>
-            <hr style="width: 20%;">
+        <div class="row-container" style="display: flex;">
+            <div class="createBtn">
+                <a href="#" class="btn btn-danger">
+                    +
+                </a>
+            </div>
+            <div class="campaign-heading">
+                <p>Campaigns</p>
+                <hr style="width: 50%;">
+            </div>
         </div>
         <div class="campaign-row mt-3">
             <div class="campaign-card">
@@ -65,22 +85,32 @@
                     <hr>
                 </div>
                 <div class="campaign-info">
-                    <div class="coins">
+                    <div class="coins" style="flex-wrap: nowrap;">
                         <h6>100</h6>
-                        <span class="ml-2">
-                            <img style="width: 60px;height: 40px;" src="images/coin3.png" alt="">
+                        <span class="">
+                            <!-- <i class="fas fa-coins fa-2x ml-2" style="color: #F0C929; outline: black;"></i> -->
+                            <img style="width: 50px;height: 30px;" src="images/coin3.png" alt="">
                         </span>
-                        <h6>35s</h6>
-                        <span class="ml-2">
-                            <img style="width: 50px;height: 40px;" src="images/clock.png" alt=""></span>
                         <h6>12/20</h6>
                         <span class="ml-2">
-                            <img style="width: 40px;height: 30px;" src="images/click.png" alt=""></span>
+                            <!-- <i class="far fa-hand-point-up fa-2x"></i> -->
+                            <img style="width: 30px;height: 20px;" src="images/click.png" alt="">
+                        </span>
                         <span>
-                            <button class="btn btn-outline-success ml-4" style="width: 60px !important;">View</button>
+                            <button class="btn btn-outline-success ml-4"
+                                style="width: 60px !important; margin-left: 12px !important; margin-top: 0;">View</button>
                         </span>
 
                     </div>
+
+                </div>
+                <div class="edit-del-btn">
+                    <button class="btn btn-outline-danger" style="width: 65px !important;">
+                        Delete
+                    </button>
+                    <button class="btn btn-outline-primary ml-2" style="width: 50px !important;">
+                        Edit
+                    </button>
 
                 </div>
 
@@ -96,19 +126,33 @@
                     <div class="coins">
                         <h6>80</h6>
                         <span class="ml-2">
+                            <!-- <i class="fas fa-coins fa-2x ml-2" style="color: #F0C929; outline: black;"></i> -->
                             <img style="width: 60px;height: 40px;" src="images/coin3.png" alt="">
                         </span>
                         <h6>15s</h6>
                         <span class="ml-2">
-                            <img style="width: 50px;height: 40px;" src="images/clock.png" alt=""></span>
+                            <!-- <i class="far fa-clock fa-2x"></i> -->
+                            <img style="width: 50px;height: 40px;" src="images/clock.png" alt="">
+                        </span>
                         <h6>2/20</h6>
                         <span class="ml-2">
-                            <img style="width: 40px;height: 30px;" src="images/click.png" alt=""></span>
+                            <!-- <i class="far fa-hand-point-up fa-2x"></i> -->
+                            <img style="width: 40px;height: 30px;" src="images/click.png" alt="">
+                        </span>
                         <span>
                             <button class="btn btn-outline-success ml-4" style="width: 60px !important;">View</button>
                         </span>
 
                     </div>
+
+                </div>
+                <div class="edit-del-btn">
+                    <button class="btn btn-outline-danger" style="width: 65px !important;">
+                        Delete
+                    </button>
+                    <button class="btn btn-outline-primary ml-2" style="width: 50px !important;">
+                        Edit
+                    </button>
 
                 </div>
 
@@ -139,6 +183,15 @@
                     </div>
 
                 </div>
+                <div class="edit-del-btn thirdBtn">
+                    <button class="btn btn-outline-danger" style="width: 65px !important;">
+                        Delete
+                    </button>
+                    <button class="btn btn-outline-primary ml-2" style="width: 50px !important;">
+                        Edit
+                    </button>
+
+                </div>
 
             </div>
             <!----End of Card div---->
@@ -172,6 +225,15 @@
                     </div>
 
                 </div>
+                <div class="edit-del-btn">
+                    <button class="btn btn-outline-danger" style="width: 65px !important;">
+                        Delete
+                    </button>
+                    <button class="btn btn-outline-primary ml-2" style="width: 50px !important;">
+                        Edit
+                    </button>
+
+                </div>
 
             </div>
             <!----End of Card div---->
@@ -200,6 +262,15 @@
                     </div>
 
                 </div>
+                <div class="edit-del-btn">
+                    <button class="btn btn-outline-danger" style="width: 65px !important;">
+                        Delete
+                    </button>
+                    <button class="btn btn-outline-primary ml-2" style="width: 50px !important;">
+                        Edit
+                    </button>
+
+                </div>
 
             </div>
             <!----End of Card div---->
@@ -226,6 +297,15 @@
                         </span>
 
                     </div>
+
+                </div>
+                <div class="edit-del-btn">
+                    <button class="btn btn-outline-danger" style="width: 65px !important;">
+                        Delete
+                    </button>
+                    <button class="btn btn-outline-primary ml-2" style="width: 50px !important;">
+                        Edit
+                    </button>
 
                 </div>
 

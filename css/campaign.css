@@ -27,7 +27,7 @@ hr{
     background-color: white;
     border-radius: 5px;
     width: 490px;
-    height: 200px;
+    height: auto;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid rgb(0, 0, 0,0.3 );
@@ -36,6 +36,22 @@ hr{
     box-shadow: 0px 10px 30px 0px rgb(0, 0, 0,0.3 );
     justify-content: space-between;
     flex-direction: column;
+}
+
+.edit-del-btn{
+    width: 110%;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.edit-del-btn button{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .campaign-title{
@@ -60,12 +76,31 @@ hr{
 }
 
 .campaign-heading{
-    margin-top: 100px;
-    font-size: 35px;
+    margin-top: 120px;
     text-align: center;
+    font-size: 35px;
     margin-bottom: 30px;
     font-weight: bold;
     color: rgba(71,11,127,255);
+}
+
+.createBtn{
+    /* margin-top: 100px !important; */
+    margin-bottom: 30px !important;
+}
+
+.createBtn a {
+    font-size: 50px; 
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-left: 200px !important;
+    border-radius:50px;
+    height: 70px !important; 
+    width: 70px !important;
+    box-shadow: 0px 20px 60px 0px rgb(45 1 100 / 10%) !important;
 }
 
 .campaign-heading {
@@ -73,6 +108,25 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 310px !important;
+}
+
+@media screen and (max-width:1500px) {
+    .campaign-card{
+        overflow: hidden;
+        margin: 20px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+
+    .campaign-row{
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+
+    /* .coins{
+        flex-wrap: wrap;
+    } */
 }
 
 @media screen and (max-width:900px) {
@@ -84,6 +138,8 @@ hr{
 @media screen and (max-width:547px) {
     .campaign-card{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 350px;
         margin-left: 20px;
         margin-right: 20px;
@@ -101,8 +157,8 @@ hr{
     }
 
     .campaign-heading{
-        margin-bottom: 10px;
-        margin-top: 90px;
+        margin-bottom: 10px !important;
+        margin-top: 90px !important;
     }
 
     .campaign-row{
@@ -115,12 +171,105 @@ hr{
     }
 
     .coins{
-        flex-wrap: wrap;
-    }
+flex-wrap: wrap;
+}
 
     .coins button{
         margin-left: 100px !important;
-        margin-top: 10px !important;
+        margin-top: 5px;
+       
     }
+
+    /* .edit-del-btn{
+        margin-left: 45px !important;
+    } */
+
+}
+
+@media screen and (max-width:984px) {
+    .campaign-heading{
+        margin-left: 200px !important;
+    }
+
+    .createBtn a {
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width:689px) {
+    .row-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .campaign-heading{
+        margin-left: 0 !important;
+        margin-top: 65px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .createBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .createBtn a{
+        margin-top: -90px;
+        margin-left: 0px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .campaign-heading{
+        margin-left: 300px;
+        margin-bottom: 0;
+        margin-top: 80px;
+    }
+
+    .createBtn a{
+        margin-left: 140px;
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    .createBtn a {
+        margin-left: 0 !important;
+        margin-top: 0px !important;
+    }
+
+    .campaign-heading{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .thirdBtn,.edit-del-btn{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    /* .createBtn{
+        margin-top: 100px;
+    } */
+    .createBtn a {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width:1350px) {
+    .createBtn a{
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (min-width:1500px) {
+.campaign-heading{
+    margin-left: 440px !important;
+}
 
 }

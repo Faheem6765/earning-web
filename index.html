@@ -15,11 +15,13 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <!----JS Animation library-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/aos.css" />
 
     <!-----Font Awesome-->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
-        type='text/css'>
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>C4C</title>
 </head>
 
@@ -40,17 +42,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-home fa-1x mr-1" style="color: #fff;" aria-hidden="true"></i>
+                            Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-link fa-1x mr-2" style="color: #fff;" aria-hidden="true"></i>
+                            Shortlink</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign up</a>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-user-plus fa-1x mr-2" style="color: #fff;" aria-hidden="true"></i>
+                            Sign up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-sign-in-alt fa-1x mr-2" style="color: #fff;" aria-hidden="true"></i>
+                            Login</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -66,7 +76,16 @@
         <div class="left-section" data-aos="fade-down" data-aos-duration="1000">
             <p>Fexkomin Faucet<br> Themes</p>
             <a href="navbar.html">
-                <button class="register-btn">Register</button>
+                <!-- <button class="register-btn">Register</button> -->
+                <button class="register-btn">
+                    <i class="fas fa-link fa-1x mr-2" style="color: #fff;" aria-hidden="true"></i>
+                    Shortlinks</button>
+                <button class="register-btn">
+                    <i class="fas fa-mouse-pointer fa-1x mr-2" style="color: white;"></i> Faucet</button>
+                <button class="register-btn">
+                    <i class="fas fa-tasks fa-1x mr-2" style="color: #fff;" aria-hidden="true"></i>
+                    Tasks</button>
+
             </a>
         </div>
         <div class="right-section" data-aos="fade-left" data-aos-duration="2000">
@@ -230,7 +249,7 @@
 
 
     <!----JS Animation code-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="bootstrap/aosjs.js"></script>
     <script>
         AOS.init();
     </script>

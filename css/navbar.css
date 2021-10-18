@@ -11,14 +11,45 @@
     top:0;
 }
 
+.mynav-item{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+    /* height: 50px;
+    width: 110px; */
+}
+
+.mynav-item:hover{
+    /* background-color: rgb(221, 44, 13); */
+    /* background-color: #FF4C29; */
+    background-color: white;
+    border-radius: 3px;
+    transition: all .5s;
+}
+
+.mynav-item:hover>a{
+    color: black;
+}
+
+.mynav-item:hover i{
+    color: black !important;
+}
+
+
 .navbar-brand>img{
  margin-left: 50px;
 }
 
 ul li .mynav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     font-size: 21px !important;
-    color: white !important;
+    color: white;
 }
 
 a:hover{
@@ -27,12 +58,8 @@ a:hover{
 
 ul li .mynav-link:hover{
     text-decoration: none !important;
-    color: rgb(255, 38, 0) !important;
+    /* color: rgb(255, 38, 0) !important; */
     transition: all .3s;
-}
-
-ul li .mynav-link {
-    margin-left: 20px !important;
 }
 
 .btn{
@@ -52,6 +79,12 @@ ul .mynav-item{
     display: flex !important;
     justify-content: center !important;
     align-items: center;
+    width: 100%;
+    margin-left: 0;
+}
+
+ul{
+    display: block;
 }
 
 .contact-btn{
