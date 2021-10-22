@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="css/report.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-----Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---Bootstrap-->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="image-show" id="fullImgBox">
+        <img src="images/cr1.jpg" alt="" id="fullImg">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+    <div class="nav-container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img style="width: 180px; height: 55px;" src="images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon color-white">
+                    <img src="images/bars-solid.svg" alt="">
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-4">
+                    <li class="mynav-item active">
+                        <a class="mynav-link" href="#">
+                            <i class="fa fa-home fa-1x mr-1" style="color: #fff;" aria-hidden="true"></i>
+                            Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="mynav-item">
+                        <a class="mynav-link" href="#">
+                            <i class="fas fa-link fa-1x mr-2" style="color: #fff;" aria-hidden="true"></i>
+                            Shorlinks</a>
+                    </li>
+
+                    <li class="mynav-item">
+                        <a class="mynav-link" href="#">
+                            <i class="fas fa-user-plus fa-1x mr-2" style="color: #fff;" aria-hidden="true"></i>
+                            Sign up</a>
+                    </li>
+                    <li class="mynav-item">
+                        <a class="mynav-link" href="#">
+                            <i class="fas fa-sign-in-alt fa-1x mr-2" style="color: #fff;" aria-hidden="true"></i>
+                            Login</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="contact-btn btn btn-lg btn-primary my-2 my-sm-0" type="submit">Contact</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!------End of Navbar-->
+
+    <div class="main-heading text-center">
+        <p>Reports</p>
+        <hr class="mx-auto" style="width: 13%;">
+    </div>
+
+    <div class="reports-container mt-5">
+        <div class="row card">
+            <div class="table table-bordered">
+                <table>
+                    <thead class="thead-light">
+                        <th>SNO</th>
+                        <th>Email</th>
+                        <th>Images</th>
+                        <th>Approval</th>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            faheemmalik886@gmail.com
+                        </td>
+                        <td>
+                            <img src="images/cr1.jpg" alt="" onclick="openImg(this.src)">
+                        </td>
+                        <td class="approval">
+                            <button class="checkBtn btn btn-outline-success">
+                                <i class="fas fa-check"></i>
+                            </button>
+
+                            <button class="crossBtn btn btn-outline-danger">X
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>hateem@gmail.com</td>
+                        <td>
+                            <img src="images/cr2.jpg" alt="" onclick="openImg(this.src)">
+                        </td>
+                        <td class="approval">
+                            <button class="checkBtn btn btn-outline-success">
+                                <i class="fas fa-check"></i>
+                            </button>
+
+                            <button class="crossBtn btn btn-outline-danger">X
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>zahid@gmail.com</td>
+                        <td>
+                            <img src="images/p5.jpg" alt="" onclick="openImg(this.src)">
+                        </td>
+                        <td class="approval">
+                            <button class="checkBtn btn btn-outline-success">
+                                <i class="fas fa-check"></i>
+                            </button>
+
+                            <button class="crossBtn btn btn-outline-danger">X
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!------Bootstrap Cdn links------>
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+
+    <script>
+        var fullImgBox = document.getElementById('fullImgBox');
+        var fullImg = document.getElementById('fullImg');
+
+        function openImg(imgPath) {
+            fullImgBox.style.display = 'flex';
+            fullImg.src = imgPath;
+        }
+
+        function closeImg() {
+            fullImgBox.style.display = 'none';
+        }
+
+    </script>
+
+</body>
+
+</html>

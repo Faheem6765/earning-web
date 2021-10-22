@@ -7,7 +7,7 @@
 .nav-container{
      position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 998;
     top:0;
 }
 
@@ -61,12 +61,12 @@ ul li .mynav-link:hover{
     /* color: rgb(255, 38, 0) !important; */
     transition: all .3s;
 }
-
+/* 
 .btn{
     width: 150px !important;
     margin-left: -100px !important;
     border-radius: 100px;
-}
+} */
 
 @media screen and (max-width:768px) {
     .navbar-brand>img{

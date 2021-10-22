@@ -1,0 +1,318 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.campaign-container{
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.open-proofBtn{
+    margin-top: -10px;
+}
+
+.reports-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.card{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    display: block;
+    overflow-y: auto;
+}
+
+.open-proofBtn button{
+    border-radius: 20px;
+}
+
+.open-proofBtn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campaign-row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+hr{
+    background-color: lightcoral;
+    color: lightcoral;
+    width: 100%;
+}
+
+.campaign-card{
+    /* background-color: #f5f0f9; */
+    background-color: white;
+    border-radius: 5px;
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0,0.3 );
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 20px 0px rgb(0, 0, 0,0.3 );
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.edit-del-btn{
+    margin-top: 8px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.edit-del-btn button{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campaign-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign-info{
+    display: flex;
+    margin: 10px;
+}
+
+.coins{
+    display: flex;
+}
+
+.coins>h6{
+    font-size: 20px;
+    margin-left: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.campaign-heading{
+    margin-top: 120px;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: rgba(71,11,127,255);
+}
+
+.createBtn{
+    /* margin-top: 100px !important; */
+    margin-bottom: 30px !important;
+}
+
+.createBtn a {
+    font-size: 50px; 
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-left: 200px !important;
+    border-radius:50px;
+    height: 70px !important; 
+    width: 70px !important;
+    box-shadow: 0px 20px 60px 0px rgb(45 1 100 / 10%) !important;
+}
+
+.campaign-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 310px !important;
+}
+
+@media screen and (max-width:1500px) {
+    .campaign-card{
+        overflow: hidden;
+        margin: 20px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+
+    .campaign-row{
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+
+    /* .coins{
+        flex-wrap: wrap;
+    } */
+}
+
+@media screen and (max-width:900px) {
+    .campaign-card{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:547px) {
+    .campaign-card{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 320px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto;
+    }
+
+    .campaign-container{
+        margin-top: 20px;
+    }
+
+    .coins h6{
+        font-size: 17px;
+        margin-left: 17px;
+        font-weight: 500;
+    }
+
+    .campaign-heading{
+        margin-bottom: 10px !important;
+        margin-top: 90px !important;
+    }
+
+    .campaign-row{
+        margin-top: 0px !important;
+    }
+
+    .coins img{
+        width: 35px !important;
+        height: 25px !important;
+    }
+
+    .coins{
+flex-wrap: wrap;
+}
+
+    .coins button{
+        margin-left: 100px !important;
+        margin-top: 5px;
+       
+    }
+
+    /* .edit-del-btn{
+        margin-left: 45px !important;
+    } */
+
+}
+
+@media screen and (max-width:984px) {
+    .campaign-heading{
+        margin-left: 200px !important;
+    }
+
+    .createBtn a {
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width:689px) {
+    .row-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .campaign-heading{
+        margin-left: 0 !important;
+        margin-top: 65px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .card{
+        padding: 0px !important;
+    }
+/* 
+    .reports-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    } */
+
+    .createBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .createBtn a{
+        margin-top: -90px;
+        margin-left: 0px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .campaign-heading{
+        margin-left: 300px;
+        margin-bottom: 0;
+        margin-top: 80px;
+    }
+
+    .createBtn a{
+        margin-left: 140px;
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    .createBtn a {
+        margin-left: 0 !important;
+        margin-top: 0px !important;
+    }
+
+    .campaign-heading{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+
+    .thirdBtn,.edit-del-btn{
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    /* .createBtn{
+        margin-top: 100px;
+    } */
+    .createBtn a {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width:1350px) {
+    .createBtn a{
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (min-width:1500px) {
+.campaign-heading{
+    margin-left: 440px !important;
+}
+
+}
