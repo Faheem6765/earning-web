@@ -7,6 +7,30 @@
     justify-content: space-around;
 }
 
+.homeAd-section{
+    background-color: rgba(71,11,127,255) !important;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeAd-section div{
+    margin-top: 60px;
+}
+
+.left-section{
+    margin-top: -80px;
+}
+
+.right-section{
+    margin-top: -40px;
+}
+
+.secondAd{
+    margin-top: 30px;
+}
+
 .left-section>p{
     font-size: 50px;
     font-weight: bold;
@@ -46,9 +70,31 @@
         height: 580px;
     }
 
+    .secondAd{
+        margin-left: auto;
+        margin-right: auto;
+        width: 310px;
+        overflow: hidden;
+        margin-bottom: -30px;
+    }
+
+  .homeAd-section div{
+    overflow: hidden;
+    margin-top: 50px;
+    width: 310px !important;
+}
+
+    .left-section{
+        margin-top: -120px;
+    }
+
+    .right-section{
+        margin-top: -70px;
+    }
+
     .right-section>img{
         width: 320px;
-        height: 250px;
+        height: 280px;
         margin-top: 0px;
     }
 

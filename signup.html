@@ -5,11 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <title>Sign up</title>
 </head>
 
 <body>
 
+    <!-- Button trigger modal -->
+
+    <button onclick="intervalStart()" type="button" class="btn btn-primary" data-toggle="modal"
+        data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" id="dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:blue">
+                        Wait for...
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <h1 id="displayTimer">
+                        20
+                    </h1>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button> -->
+                    <button type="button" class="btn btn-primary" class="close" data-dismiss="modal"
+                        aria-label="Close">Close..</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var countTime = 20;
+        var initialValue = 20;
+
+        function intervalStart() {
+            setInterval(() => {
+                if (countTime != -1) {
+                    countTimer();
+                }
+            }, 1000);
+        }
+
+
+        function countTimer() {
+            countTime--;
+            let displayTimer = document.getElementById('displayTimer');
+            displayTimer.innerHTML = countTime;
+            if (countTime == initialValue - 5) {
+
+                let modal = document.getElementById('exampleModal');
+                let dialog = document.getElementById('dialog');
+                modal.style.display = 'none';
+                dialog.style.display = 'none';
+
+
+            }
+
+        }
+
+
+
+    </script>
+
+
+    <script>
+        function refreshPage() {
+            location.reload();
+        }
+    </script>
+
+    <!------Bootstrap Cdn links------>
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
 </body>
 
 </html>
